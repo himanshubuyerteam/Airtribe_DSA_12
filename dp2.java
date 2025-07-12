@@ -64,10 +64,9 @@ public class dp2 {
 
         for(int i=1;i<dp.length;i++)
         {
+            int max=0;
             for(int j=0;i<noOfItem;j++)
             {
-                int max=0;
-
                 if(wt[j]<=i)
                 {
                     max=Math.max(dp[i-wt[j]]+val[i],max);
