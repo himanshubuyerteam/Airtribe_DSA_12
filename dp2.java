@@ -70,7 +70,7 @@ public class dp2 {
 
                 if(wt[j]<=i)
                 {
-                    max=dp[i-wt[j]]+val[i];
+                    max=Math.max(dp[i-wt[j]]+val[i],max);
                 }
                 dp[i]=max;
             }
